@@ -4,7 +4,7 @@ A simple Command Line Interface (CLI) application built in Python to manage and 
 
 This project allows users to add, update, list, delete, calculate totals, and export expenses using a structured JSON file for storage.
 
-It is inspired from the Expense Tracker project featured in Backend Roadmap from roadmap.sh
+It is inspired from the Expense Tracker project featured in Backend Roadmap from roadmap.sh(https://roadmap.sh/projects/expense-tracker)
 
 ---
 
