@@ -61,35 +61,50 @@ Structure example:
 3. Run the script using python:
    python expense.py
 
-## Usage
-  Add an expense
-    python expense.py add "Rent" 1200 1 --description "Monthly apartment rent"
+##  Usage
 
-  Parameters
-    name = Expense name 
-    value = Expense value(integer)
-    month = Month number(1-12)
-    -d or --description = Optional description
-  Update an expense
-    python expense.py up 1 value 1500
-  Updatable fields:
-    name
-    value
-    description
-    month
-  List all expenses
-    python expense.py list
-  Show total amount
-    python expense.py amount -t
-  Show amount per month
-    python expense.py amount -m 1
-  Delete an expense
-  python expense.py delete 1 --yes
-  (the --yes flag is required to confirm deletion)
-  Export to CSV
-    python expense.py export
-    this will generate:
-    despesas.csv
+###  Add an expense
+
+```bash
+python expense.py add "Rent" 1200 1 -d "Monthly apartment rent"
+```
+Arguments:
+
+-`name` → Expense name
+
+-`value` → Expense value (integer)
+
+-`month` → Month number (1–12)
+
+-`-d or --description` → Optional description
+
+## Update an expense
+```bash
+python expense.py up 1 value 1500
+```
+## List all expenses
+```bash
+python expense.py list
+```
+## Show total amount
+```bash
+python expense.py amount -t
+```
+## Show amount by month
+```bash
+python expense.py amount -m 1
+```
+## Delete an expense
+```bash
+python expense.py delete 1 --yes
+```
+The flag --yes is required to confirm deletion
+## Export to CSV
+```bash
+python expense.py export
+```
+this will generate a file called:
+despesas.csv
 
 ## Author
   Built as a backend practice project to improve Python and CLI development skills.
